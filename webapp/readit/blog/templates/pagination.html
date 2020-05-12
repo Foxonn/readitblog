@@ -1,0 +1,43 @@
+{% load customtags %}
+
+<div class="row mt-5">
+    <div class="col text-center">
+        <div class="block-27">
+            <ul>
+                {% if page_obj.has_previous and pg_page < paginator.num_pages %}
+                    <li><a href="?page={{ page_obj.previous_page_number }}">&lt;</a></li>
+                {% endif %}
+
+                {% for page in paginator.page_range %}
+                    {% if pg_page < paginator.num_pages and page_obj.has_previous and forloop.first and page_obj.number > pg_page %}
+                        {% if page_obj.number == page %}
+                            <li class="active"><span>&lt;&lt;</span></li>
+                        {% else %}
+                            <li><a href="?page=1">&lt;&lt;</a></li>
+                        {% endif %}
+                    {% endif %}
+
+                    {% if page < page_obj.number|add:pg_page and page > page_obj.number|dec:pg_page %}
+                        {% if page_obj.number == page %}
+                            <li class="active"><span>{{ page }}</span></li>
+                        {% else %}
+                            <li><a href="?page={{ page }}">{{ page }}</a></li>
+                        {% endif %}
+                    {% endif %}
+
+                    {% if pg_page < paginator.num_pages and page_obj.has_next and forloop.last and page_obj.number|add:pg_page < paginator.num_pages %}
+                        {% if page_obj.number == page %}
+                            <li class="active"><span>&gt;&gt;</span></li>
+                        {% else %}
+                            <li><a href="?page={{ paginator.num_pages }}">&gt;&gt;</a></li>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+
+                {% if page_obj.has_next and pg_page < paginator.num_pages %}
+                    <li><a href="?page={{ page_obj.next_page_number }}">&gt;</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</div>

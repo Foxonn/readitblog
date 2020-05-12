@@ -1,0 +1,12 @@
+<div class="categories">
+    <h3>Categories</h3>
+    {% for category in categories %}
+        <li>
+            <a href="{{ category.url }}">
+                {{ category.title }}
+                <span class="ion-ios-arrow-forward"></span>
+            </a>
+        </li>
+    {% endfor %}
+</div>
+

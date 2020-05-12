@@ -1,0 +1,52 @@
+<div class="comment-form-wrap pt-5">
+    <h3 id="enter-comment" class="mb-5">Leave a comment</h3>
+    <form class="p-5 bg-light" method="post" class="form-comment">
+        <div class="form-group">
+            {% if form.name.errors %}
+                {% for error in form.name.errors %}
+                    <p>{{ error }}</p>
+                {% endfor %}
+            {% endif %}
+
+            <label for="{{ form.name.name }}">{{ form.name.label|capfirst }} *</label>
+            <input type="text" name="{{ form.name.name }}" id="{{ form.name.name }}" class="form-control"
+                   value="{% if form.name.value %}{{ form.name.value }}{% endif %}">
+        </div>
+
+        <div class="form-group">
+            {% for error in form.email.errors %}
+                <p>{{ error }}</p>
+            {% endfor %}
+
+            <label for="{{ form.email.name }}">{{ form.email.name|capfirst }} *</label>
+            <input type="text" name="{{ form.email.name }}" id="{{ form.email.name }}" class="form-control"
+                   value="{% if form.email.value %}{{ form.email.value }}{% endif %}">
+        </div>
+
+        <div class="form-group">
+            {% for error in form.message.errors %}
+                <p>{{ error }}</p>
+            {% endfor %}
+
+            <label for="{{ form.message.name }}">{{ form.message.name|capfirst }} *</label>
+            <textarea name="{{ form.message.name }}" id="{{ form.message.name }}" cols="30" rows="10"
+                      class="form-control">{% if form.message.value %}{{ form.message.value }}{% endif %}</textarea>
+        </div>
+
+        <div class="form-group">
+            {% csrf_token %}
+            {% for error in form.post.errors %}
+                <p>{{ error }}</p>
+            {% endfor %}
+
+            <input type="hidden" value="{% if post %}{{ post }}{% endif %}" name="post" readonly>
+            {% for error in form.replys.errors %}
+                <p>{{ error }}</p>
+            {% endfor %}
+
+            <input type="hidden" name="{{ form.replys.name }}" id="message_reply" readonly>
+            <input type="submit" value="Post Comment" class="btn py-3 px-4 btn-primary">
+            <input type="reset" value="Reset" class="btn py-3 px-4 btn-primary">
+        </div>
+    </form>
+</div>

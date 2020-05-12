@@ -1,0 +1,855 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 07:12:21 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /webapp/env
+Set PythonHome to /webapp/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55df4813ff30
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+added /webapp/readit/ to pythonpath.
+added /webapp/env/lib/python3.8/site-packages/ to pythonpath.
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. GAME OVER ***
+VACUUM: unix socket /sock/readit.sock removed.
+unlink(): No such file or directory [core/uwsgi.c line 1673]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 07:17:15 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /webapp/env
+Set PythonHome to /webapp/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x561d4a03ab70
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+added /webapp/readit/ to pythonpath.
+added /webapp/env/lib/python3.8/site-packages/ to pythonpath.
+*** no app loaded. GAME OVER ***
+VACUUM: unix socket /sock/readit.sock removed.
+unlink(): No such file or directory [core/uwsgi.c line 1673]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 07:17:56 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /webapp/env
+Set PythonHome to /webapp/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x556a2fc1fb70
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+added /webapp/readit/ to pythonpath.
+added /webapp/env/lib/python3.8/site-packages/ to pythonpath.
+*** no app loaded. GAME OVER ***
+VACUUM: unix socket /sock/readit.sock removed.
+unlink(): No such file or directory [core/uwsgi.c line 1673]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 07:18:49 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /webapp/env
+Set PythonHome to /webapp/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5597ce8e1d10
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+added /webapp/env/lib/python3.8/site-packages/ to pythonpath.
+***************
+[(), {'upload_to': 'imagess/', 'verbose_name': 'post_image', 'null': True, 'blank': True}]
+***************
+WSGI app 0 (mountpoint='') ready in 17 seconds on interpreter 0x5597ce8e1d10 pid: 1 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned the uWSGI spooler on dir /webapp/readit/mytask with pid 7
+spawned the uWSGI spooler on dir /webapp/readit/mytask with pid 8
+spawned uWSGI worker 1 (pid: 9, cores: 1)
+spawned uWSGI worker 2 (pid: 10, cores: 1)
+*** Stats server enabled on /tmp/stats.socket fd: 22 ***
+killing the spooler with pid 7
+killing the spooler with pid 8
+...brutally killing workers...
+spooler (pid: 8) annihilated
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 07:29:56 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /webapp/env
+Set PythonHome to /webapp/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x561adad34ca0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+added /webapp/readit/ to pythonpath.
+added /webapp/env/lib/python3.8/site-packages/ to pythonpath.
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. GAME OVER ***
+VACUUM: unix socket /sock/readit.sock removed.
+VACUUM: unix socket /tmp/stats.socket (stats) removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 07:30:25 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /webapp/env
+Set PythonHome to /webapp/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55efe9668f30
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+added /webapp/readit/ to pythonpath.
+added /webapp/env/lib/python3.8/site-packages/ to pythonpath.
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. GAME OVER ***
+VACUUM: unix socket /sock/readit.sock removed.
+unlink(): No such file or directory [core/uwsgi.c line 1673]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 07:33:40 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+!!! Python Home is not a directory: /webapp/readit//env/ !!!
+Set PythonHome to /webapp/readit//env/
+Python path configuration:
+  PYTHONHOME = '/webapp/readit//env/'
+  PYTHONPATH = (not set)
+  program name = '/webapp/readit//env//bin/python'
+  isolated = 0
+  environment = 1
+  user site = 1
+  import site = 1
+  sys._base_executable = '/webapp/readit//env//bin/python'
+  sys.base_prefix = '/webapp/readit//env'
+  sys.base_exec_prefix = '/webapp/readit//env'
+  sys.executable = '/webapp/readit//env//bin/python'
+  sys.prefix = '/webapp/readit//env'
+  sys.exec_prefix = '/webapp/readit//env'
+  sys.path = [
+    '/webapp/readit//env/lib/python38.zip',
+    '/webapp/readit//env/lib/python3.8',
+    '/webapp/readit//env/lib/python3.8/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007f3756a25780 (most recent call first):
+<no Python frame>
+VACUUM: unix socket /sock/readit.sock removed.
+unlink(): No such file or directory [core/uwsgi.c line 1673]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 07:35:22 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+!!! Python Home is not a directory: /webapp/readit//env/ !!!
+Set PythonHome to /webapp/readit//env/
+Python path configuration:
+  PYTHONHOME = '/webapp/readit//env/'
+  PYTHONPATH = (not set)
+  program name = '/webapp/readit//env//bin/python'
+  isolated = 0
+  environment = 1
+  user site = 1
+  import site = 1
+  sys._base_executable = '/webapp/readit//env//bin/python'
+  sys.base_prefix = '/webapp/readit//env'
+  sys.base_exec_prefix = '/webapp/readit//env'
+  sys.executable = '/webapp/readit//env//bin/python'
+  sys.prefix = '/webapp/readit//env'
+  sys.exec_prefix = '/webapp/readit//env'
+  sys.path = [
+    '/webapp/readit//env/lib/python38.zip',
+    '/webapp/readit//env/lib/python3.8',
+    '/webapp/readit//env/lib/python3.8/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007fd1fe761780 (most recent call first):
+<no Python frame>
+VACUUM: unix socket /sock/readit.sock removed.
+unlink(): No such file or directory [core/uwsgi.c line 1673]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 07:35:54 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+!!! Python Home is not a directory: /webapp/readit//env/ !!!
+Set PythonHome to /webapp/readit//env/
+Python path configuration:
+  PYTHONHOME = '/webapp/readit//env/'
+  PYTHONPATH = (not set)
+  program name = '/webapp/readit//env//bin/python'
+  isolated = 0
+  environment = 1
+  user site = 1
+  import site = 1
+  sys._base_executable = '/webapp/readit//env//bin/python'
+  sys.base_prefix = '/webapp/readit//env'
+  sys.base_exec_prefix = '/webapp/readit//env'
+  sys.executable = '/webapp/readit//env//bin/python'
+  sys.prefix = '/webapp/readit//env'
+  sys.exec_prefix = '/webapp/readit//env'
+  sys.path = [
+    '/webapp/readit//env/lib/python38.zip',
+    '/webapp/readit//env/lib/python3.8',
+    '/webapp/readit//env/lib/python3.8/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007f6f8989b780 (most recent call first):
+<no Python frame>
+VACUUM: unix socket /sock/readit.sock removed.
+unlink(): No such file or directory [core/uwsgi.c line 1673]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 07:40:30 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+!!! Python Home is not a directory: /webapp/readit//env/ !!!
+Set PythonHome to /webapp/readit//env/
+Python path configuration:
+  PYTHONHOME = '/webapp/readit//env/'
+  PYTHONPATH = (not set)
+  program name = '/webapp/readit//env//bin/python'
+  isolated = 0
+  environment = 1
+  user site = 1
+  import site = 1
+  sys._base_executable = '/webapp/readit//env//bin/python'
+  sys.base_prefix = '/webapp/readit//env'
+  sys.base_exec_prefix = '/webapp/readit//env'
+  sys.executable = '/webapp/readit//env//bin/python'
+  sys.prefix = '/webapp/readit//env'
+  sys.exec_prefix = '/webapp/readit//env'
+  sys.path = [
+    '/webapp/readit//env/lib/python38.zip',
+    '/webapp/readit//env/lib/python3.8',
+    '/webapp/readit//env/lib/python3.8/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007f0aa3b91780 (most recent call first):
+<no Python frame>
+VACUUM: unix socket /sock/readit.sock removed.
+unlink(): No such file or directory [core/uwsgi.c line 1673]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 07:41:31 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+!!! Python Home is not a directory: /webapp/readit//env/ !!!
+Set PythonHome to /webapp/readit//env/
+Python path configuration:
+  PYTHONHOME = '/webapp/readit//env/'
+  PYTHONPATH = (not set)
+  program name = '/webapp/readit//env//bin/python'
+  isolated = 0
+  environment = 1
+  user site = 1
+  import site = 1
+  sys._base_executable = '/webapp/readit//env//bin/python'
+  sys.base_prefix = '/webapp/readit//env'
+  sys.base_exec_prefix = '/webapp/readit//env'
+  sys.executable = '/webapp/readit//env//bin/python'
+  sys.prefix = '/webapp/readit//env'
+  sys.exec_prefix = '/webapp/readit//env'
+  sys.path = [
+    '/webapp/readit//env/lib/python38.zip',
+    '/webapp/readit//env/lib/python3.8',
+    '/webapp/readit//env/lib/python3.8/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007f0c725e5780 (most recent call first):
+<no Python frame>
+VACUUM: unix socket /sock/readit.sock removed.
+unlink(): No such file or directory [core/uwsgi.c line 1673]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 07:41:58 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+!!! Python Home is not a directory: /webapp/readit//env/ !!!
+Set PythonHome to /webapp/readit//env/
+Python path configuration:
+  PYTHONHOME = '/webapp/readit//env/'
+  PYTHONPATH = (not set)
+  program name = '/webapp/readit//env//bin/python'
+  isolated = 0
+  environment = 1
+  user site = 1
+  import site = 1
+  sys._base_executable = '/webapp/readit//env//bin/python'
+  sys.base_prefix = '/webapp/readit//env'
+  sys.base_exec_prefix = '/webapp/readit//env'
+  sys.executable = '/webapp/readit//env//bin/python'
+  sys.prefix = '/webapp/readit//env'
+  sys.exec_prefix = '/webapp/readit//env'
+  sys.path = [
+    '/webapp/readit//env/lib/python38.zip',
+    '/webapp/readit//env/lib/python3.8',
+    '/webapp/readit//env/lib/python3.8/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007fa88deed780 (most recent call first):
+<no Python frame>
+VACUUM: unix socket /sock/readit.sock removed.
+unlink(): No such file or directory [core/uwsgi.c line 1673]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 07:50:07 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+!!! Python Home is not a directory: /webapp/readit//env/ !!!
+Set PythonHome to /webapp/readit//env/
+Python path configuration:
+  PYTHONHOME = '/webapp/readit//env/'
+  PYTHONPATH = (not set)
+  program name = '/webapp/readit//env//bin/python'
+  isolated = 0
+  environment = 1
+  user site = 1
+  import site = 1
+  sys._base_executable = '/webapp/readit//env//bin/python'
+  sys.base_prefix = '/webapp/readit//env'
+  sys.base_exec_prefix = '/webapp/readit//env'
+  sys.executable = '/webapp/readit//env//bin/python'
+  sys.prefix = '/webapp/readit//env'
+  sys.exec_prefix = '/webapp/readit//env'
+  sys.path = [
+    '/webapp/readit//env/lib/python38.zip',
+    '/webapp/readit//env/lib/python3.8',
+    '/webapp/readit//env/lib/python3.8/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007f254779d780 (most recent call first):
+<no Python frame>
+VACUUM: unix socket /sock/readit.sock removed.
+unlink(): No such file or directory [core/uwsgi.c line 1673]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 07:52:34 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /webapp/env
+Set PythonHome to /webapp/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55f069798bb0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+added /webapp/env/lib/python3.8/site-packages/ to pythonpath.
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. GAME OVER ***
+VACUUM: unix socket /sock/readit.sock removed.
+unlink(): No such file or directory [core/uwsgi.c line 1673]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 07:54:03 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /webapp/env
+Set PythonHome to /webapp/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55950e654c70
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+added /webapp/env/lib/python3.8/site-packages/ to pythonpath.
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. GAME OVER ***
+VACUUM: unix socket /sock/readit.sock removed.
+unlink(): No such file or directory [core/uwsgi.c line 1673]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 07:58:11 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /webapp/env
+Set PythonHome to /webapp/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5631605e3af0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+added /webapp/env/lib/python3.8/site-packages/ to pythonpath.
+***************
+[(), {'upload_to': 'imagess/', 'verbose_name': 'post_image', 'null': True, 'blank': True}]
+***************
+WSGI app 0 (mountpoint='') ready in 10 seconds on interpreter 0x5631605e3af0 pid: 1 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned the uWSGI spooler on dir /webapp/readit/mytask with pid 7
+spawned the uWSGI spooler on dir /webapp/readit/mytask with pid 8
+spawned uWSGI worker 1 (pid: 9, cores: 1)
+spawned uWSGI worker 2 (pid: 10, cores: 1)
+*** Stats server enabled on /tmp/stats.socket fd: 22 ***
+killing the spooler with pid 7
+killing the spooler with pid 8
+...brutally killing workers...
+spooler (pid: 8) annihilated
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 14:05:30 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /webapp/env
+Set PythonHome to /webapp/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5620d112ccf0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+***************
+[(), {'upload_to': 'imagess/', 'verbose_name': 'post_image', 'null': True, 'blank': True}]
+***************
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x5620d112ccf0 pid: 1 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1)
+spawned the uWSGI spooler on dir /webapp/readit/mytask with pid 65
+spawned the uWSGI spooler on dir /webapp/readit/mytask with pid 66
+spawned uWSGI worker 1 (pid: 67, cores: 1)
+spawned uWSGI worker 2 (pid: 68, cores: 1)
+*** Stats server enabled on /tmp/stats.socket fd: 22 ***
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 08:10:47 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /webapp/env
+Set PythonHome to /webapp/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55c48fe52aa0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+***************
+[(), {'upload_to': 'imagess/', 'verbose_name': 'post_image', 'null': True, 'blank': True}]
+***************
+WSGI app 0 (mountpoint='') ready in 11 seconds on interpreter 0x55c48fe52aa0 pid: 1 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned the uWSGI spooler on dir /webapp/readit/mytask with pid 9
+spawned the uWSGI spooler on dir /webapp/readit/mytask with pid 10
+spawned uWSGI worker 1 (pid: 11, cores: 1)
+spawned uWSGI worker 2 (pid: 12, cores: 1)
+*** Stats server enabled on /tmp/stats.socket fd: 22 ***
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/webapp/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/webapp/env/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: blog_post.images
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/webapp/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/webapp/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/webapp/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./blog/views.py", line 56, in post_list
+    posts = get_list_or_404(Post.objects.all())
+  File "/webapp/env/lib/python3.8/site-packages/django/shortcuts.py", line 96, in get_list_or_404
+    obj_list = list(queryset.filter(*args, **kwargs))
+  File "/webapp/env/lib/python3.8/site-packages/django/db/models/query.py", line 258, in __len__
+    self._fetch_all()
+  File "/webapp/env/lib/python3.8/site-packages/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/webapp/env/lib/python3.8/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/webapp/env/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1151, in execute_sql
+    cursor.execute(sql, params)
+  File "/webapp/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/webapp/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/webapp/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/webapp/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/webapp/env/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/webapp/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "/webapp/env/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: blog_post.images
+Not Found: /favicon.ico
+killing the spooler with pid 9
+killing the spooler with pid 10
+...brutally killing workers...
+spooler (pid: 10) annihilated
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 14:15:50 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /webapp/env
+Set PythonHome to /webapp/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5647c4552cd0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'wsgi'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. GAME OVER ***
+VACUUM WARNING: unix socket /sock/readit.sock changed inode. Skip removal
+VACUUM: unix socket /tmp/stats.socket (stats) removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 11 08:16:07 2020] ***
+compiled with version: 8.3.0 on 20 March 2020 12:18:53
+os: Linux-4.19.76-linuxkit #1 SMP Thu Oct 17 19:31:58 UTC 2019
+nodename: e0699b487084
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /webapp/readit
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/readit
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /sock/readit.sock fd 8
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Feb  2 2020, 08:37:37)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /webapp/env
+Set PythonHome to /webapp/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55e0e1fcea80
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'wsgi'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. GAME OVER ***
+VACUUM: unix socket /sock/readit.sock removed.
+unlink(): No such file or directory [core/uwsgi.c line 1673]

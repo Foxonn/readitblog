@@ -1,0 +1,40 @@
+{% load static %}
+
+<textarea name="{{ name }}" id="description" cols="30" rows="10" class="hidden">
+    {{ value|yesno:'' }}
+</textarea>
+<div class="clear"></div>
+<iframe id="frame_editor" src="javascript:void(0);" frameborder="0" style="width:100%; min-height:350px;"></iframe>
+
+<div id="frame_dom" class="hidden">
+    <div id="toolbar-container"></div>
+    <div id="editor"> {{ value|yesno:''|safe }}</div>
+    <script src="{% static "/ckeditor5/build/ckeditor.js" %}"></script>
+
+    <script>
+        let settings = {{ settings|safe }};
+
+        DecoupledDocumentEditor
+            .create(document.querySelector('#editor'), settings,)
+            .then(editor => {
+                const toolbarContainer = document.querySelector('#toolbar-container');
+                toolbarContainer.appendChild(editor.ui.view.toolbar.element);
+
+                editor.model.document.on('change:data', () => {
+                    console.log('The data has changed!');
+                    parent.document.getElementById('description').innerHTML = editor.getData();
+                });
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+</div>
+
+<script>
+    let doc = frame_editor.contentWindow.document
+    doc.write(frame_dom.innerHTML);
+    doc.close();
+    doc.querySelector('.ck.ck-toolbar').remove();
+    frame_dom.remove();
+</script>

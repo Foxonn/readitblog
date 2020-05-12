@@ -1,0 +1,22 @@
+{% load static %}
+
+{% for comment in comments %}
+    {% if comment.published %}
+        <li class="comment" id="comment_{{ comment.id }}">
+            <div class="vcard bio">
+                <img src="{% static "blog/images/person_1.jpg" %}" alt="Image placeholder">
+            </div>
+            <div class="comment-body">
+                <h3>{{ comment.user.name }}</h3>
+                <div class="meta mb-3">{{ comment.created|date:"b d, Y H:i" }}</div>
+                {{ comment.message }}
+                <p><a href="#enter-comment" data-id="{{ comment.pk }}" class="reply">Reply</a></p>
+            </div>
+            {% if comment.comments_replys.all %}
+                <ul class="children">
+                    {% include "readitcomments/comment.html" with comments=comment.comments_replys.all %}
+                </ul>
+            {% endif %}
+        </li>
+    {% endif %}
+{% endfor %}

@@ -1,0 +1,2 @@
+[pid: 12|app: 0|req: 1/1] 172.19.0.1 () {52 vars in 1222 bytes} [Mon May 11 14:11:05 2020] GET / => generated 130809 bytes in 2134 msecs (HTTP/1.1 500) 5 headers in 163 bytes (1 switches on core 0)
+[pid: 12|app: 0|req: 2/2] 172.19.0.1 () {50 vars in 1140 bytes} [Mon May 11 14:11:07 2020] GET /favicon.ico => generated 2406 bytes in 96 msecs (HTTP/1.1 404) 4 headers in 135 bytes (1 switches on core 0)

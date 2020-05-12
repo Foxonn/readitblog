@@ -1,0 +1,8 @@
+{% load static %}
+
+{% if comments %}
+    <h3 class="mb-5">{{ count }} Comment{{ count|pluralize }}</h3>
+    <ul class="comment-list">
+        {% include "readitcomments/comment.html" with comments=comments %}
+    </ul>
+{% endif %}

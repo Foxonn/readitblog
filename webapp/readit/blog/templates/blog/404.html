@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page not found !</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static "/blog/css/animate.css" %}">
+    <link rel="stylesheet" href="{% static "/blog/css/style.css" %}">
+</head>
+<body>
+
+<div class="hero-wrap js-fullheight" style="background-image: url('{% static "/blog/images/bg_1.jpg" %}');"
+     data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        {% block herowrap %}
+            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start"
+                 data-scrollax-parent="true">
+                <div class="col-md-12 ftco-animate">
+                    <h2 class="subheading">Page not found !</h2>
+                    <h1 class="mb-4 mb-md-0">404</h1>
+                </div>
+            </div>
+        {% endblock %}
+    </div>
+</div>
+
+<script src="{% static "/blog/js/jquery.min.js" %}"></script>
+<script src="{% static "/blog/js/jquery-migrate-3.0.1.min.js" %}"></script>
+<script src="{% static "/blog/js/popper.min.js" %}"></script>
+<script src="{% static "/blog/js/bootstrap.min.js" %}"></script>
+<script src="{% static "/blog/js/jquery.easing.1.3.js" %}"></script>
+<script src="{% static "/blog/js/jquery.waypoints.min.js" %}"></script>
+<script src="{% static "/blog/js/jquery.stellar.min.js" %}"></script>
+<script src="{% static "/blog/js/owl.carousel.min.js" %}"></script>
+<script src="{% static "/blog/js/jquery.magnific-popup.min.js" %}"></script>
+<script src="{% static "/blog/js/aos.js" %}"></script>
+<script src="{% static "/blog/js/jquery.animateNumber.min.js" %}"></script>
+<script src="{% static "/blog/js/scrollax.min.js" %}"></script>
+<script src="{% static "/blog/js/main.js" %}"></script>
+
+</body>
+</html>

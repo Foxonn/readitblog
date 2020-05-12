@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <section class="ftco-section bg-light">
+        <div class="container">
+            <div class="row d-flex">
+                {% for post in page_obj %}
+                    <div class="col-md-4 d-flex ftco-animate">
+                        <div class="blog-entry justify-content-end">
+                            <a href="{{ post.get_absolute_url }}" class="block-20"
+                               style="background-image: url(
+                                       {% if post.image %}{{ post.image.url }}{% else %}{% static "img/no_image.png" %}{% endif %});">
+                            </a>
+                            <div class="text p-4 float-right d-block">
+                                <div class="topper d-flex align-items-center">
+                                    <div class="one py-2 pl-3 pr-1 align-self-stretch">
+                                        <span class="day">{{ post.created|date:"d" }}</span>
+                                    </div>
+                                    <div class="two pl-0 pr-3 py-2 align-self-stretch">
+                                        <span class="yr">{{ post.created|date:"Y" }}</span>
+                                        <span class="mos">{{ post.created|date:"F" }}</span>
+                                    </div>
+                                </div>
+                                <h3 class="heading mb-3">
+                                    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                                </h3>
+                                {% if post.short_description %}
+                                    <p>{{ post.short_description|safe|truncatewords:15|linebreaks }}</p>
+                                {% endif %}
+                                <p>
+                                    <a href="{{ post.get_absolute_url }}" class="btn-custom">
+                                        <span class="ion-ios-arrow-round-forward mr-3"></span>
+                                        Read more
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                {% empty %}
+                    <div>Sorry, no posts in this list.</div>
+                {% endfor %}
+            </div>
+            {% if paginator and paginator.num_pages > 1 %}
+                {% include "pagination.html" with pg_page=3 %}
+            {% endif %}
+        </div>
+    </section>
+{% endblock %}
