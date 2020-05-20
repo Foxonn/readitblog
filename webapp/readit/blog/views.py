@@ -2,25 +2,24 @@ from django.shortcuts import render, get_object_or_404, get_list_or_404, redirec
 from django.http import HttpResponseNotFound, HttpResponse, HttpResponseRedirect
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from .models import Post, Category
-
+from django.urls import reverse_lazy
 from readitcomments.models import Comment
 from readitcomments.forms import CommentForm
 from readitcomments.services import exist_user
-from task import task_notify_admin, task_notify_user, task_notify_new_responded
+from readitcomments.tasks import task_notify_admin, task_notify_user
 
 
 def blog_dispatcher(request, match):
     if match and Post.objects.filter(url=match).first():
         context = {}
 
-        post = post_detail(request, match)
+        post = get_object_or_404(Post, url=match)
 
         if request.method == 'POST':
             form = CommentForm(request.POST)
 
             if form.is_valid():
                 user = exist_user(form.cleaned_data['name'], form.cleaned_data['email'])
-                post = get_object_or_404(Post, id=form.cleaned_data['post'])
 
                 comment = Comment(message=form.cleaned_data['message'], user=user, post=post)
                 comment.save()
@@ -32,15 +31,15 @@ def blog_dispatcher(request, match):
 
                 comment_link = '{}#comment_{}'.format(post.get_absolute_url(), comment.id)
 
-                task_notify_admin.spool({'user_name': user.name, 'comment_link': comment_link})
-                task_notify_user.spool({'user_email': user.email, 'comment_link': comment_link})
+                task_notify_admin.delay({'user_name': user.name, 'comment_link': comment_link})
+                task_notify_user.delay({'user_email': user.email, 'comment_link': comment_link})
 
-                return redirect(post)
+                return redirect('comment_thanks', post_id=post.pk)
         else:
             form = CommentForm()
 
         context.update({'form': form})
-        context.update(post)
+        context.update({'post': post})
 
         return render(request, 'blog/post/post_detail.html', context)
 
@@ -77,9 +76,3 @@ def post_list(request, match=None):
         return context
 
     return render(request, 'blog/post/post_list.html', context)
-
-
-def post_detail(request, url):
-    post = Post.objects.get(url=url)
-
-    return {'post': post}

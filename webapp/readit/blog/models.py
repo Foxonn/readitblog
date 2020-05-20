@@ -5,8 +5,6 @@ from readittags.models import Tag
 from django.utils.text import slugify
 from simple_history import register
 from django.urls import reverse_lazy
-from django.template.defaultfilters import truncatewords_html, striptags
-from os import path
 from .services import models as smodel
 from .fields import BlogImageField
 

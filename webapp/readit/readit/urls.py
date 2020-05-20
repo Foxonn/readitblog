@@ -13,20 +13,16 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.contrib import admin
 from django.urls import path, include
 from blog.views import post_list
+from readitcomments.views import comment_thanks
 
 urlpatterns = [
     path('', post_list, name='home'),
     path('blog/', include('blog.urls', namespace='blog')),
     path('tag/', include('readittags.urls', namespace='tag')),
+    path('comment_thanks/<int:post_id>/', comment_thanks, name="comment_thanks"),
     path('admin/', admin.site.urls),
 ]
-
-try:
-    import django_uwsgi
-    urlpatterns.append(path(r'admin/uwsgi/', include('django_uwsgi.urls')))
-except:
-    pass
-

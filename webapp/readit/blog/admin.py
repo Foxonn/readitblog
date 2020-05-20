@@ -37,7 +37,7 @@ class PostAdminForm(forms.ModelForm):
 class PostAdmin(SimpleHistoryAdmin):
     form = PostAdminForm
 
-    fields = (('title', 'slug', 'post_link',), 'description', 'short_description', 'image', 'category', 'tags', 'available',)
+    fields = (('title', 'slug', 'post_link',), 'description', 'short_description', 'image', 'images', 'category', 'tags', 'available',)
     list_display = ('title', 'short_description', 'category', 'author', 'available',)
     list_filter = ('author', 'available',)
     search_fields = ('title', 'description',)
