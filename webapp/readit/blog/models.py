@@ -59,11 +59,17 @@ class Category(BlogModel):
         verbose_name_plural = gettext_lazy('verbose_category_name_plural')
 
 
+class PostImage(models.Model):
+    original = models.ImageField(upload_to='images/post/', verbose_name=gettext_lazy('post_image'), null=True, blank=True)
+    recent_post_thumb = models.ImageField(upload_to='images/post/', verbose_name=gettext_lazy('post_image'), null=True, blank=True)
+    category_thumb = models.ImageField(upload_to='images/post/', verbose_name=gettext_lazy('post_image'), null=True, blank=True)
+    article_thumb = models.ImageField(upload_to='images/post/', verbose_name=gettext_lazy('post_image'), null=True, blank=True)
+
+
 class Post(BlogModel):
     description = models.TextField(verbose_name=gettext_lazy('description'))
     short_description = models.TextField(verbose_name=gettext_lazy('short_description'), blank=True)
-    image = models.ImageField(upload_to='images/', verbose_name=gettext_lazy('post_image'), null=True, blank=True)
-    images = BlogImageField(upload_to='imagess/', verbose_name=gettext_lazy('post_image'), null=True, blank=True)
+    image = models.ForeignKey('PostImage', on_delete=models.CASCADE, verbose_name=gettext_lazy('post_images'), null=True, blank=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='post_category',
                                  verbose_name=gettext_lazy('category'), null=True, blank=True)
     tags = models.ManyToManyField(Tag, related_name='post_tags', verbose_name=gettext_lazy('tags'),
