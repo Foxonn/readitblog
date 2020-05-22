@@ -65,10 +65,8 @@
                     </div>
 
                     <div class="pt-5 mt-5">
-                        {% if post.post_comments %}
-                            {% comments post.id %}
-                        {% endif %}
-                        {% form_comments form post.id %}
+                        {% comments post.id %}
+                        {% form_comments request post.id %}
                     </div>
 
                 </div> <!-- .col-md-8 -->

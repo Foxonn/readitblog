@@ -39,7 +39,7 @@
                 <p>{{ error }}</p>
             {% endfor %}
 
-            <input type="hidden" value="{% if post %}{{ post }}{% endif %}" name="post" readonly>
+            <input type="hidden" value="{% if post_id %}{{ post_id }}{% endif %}" name="post" readonly>
             {% for error in form.replys.errors %}
                 <p>{{ error }}</p>
             {% endfor %}

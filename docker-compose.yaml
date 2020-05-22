@@ -1,46 +1,53 @@
-
 version: '3'
-
 services:
   nginx:
     image: nginx
     ports:
+      - '5555:5555'
       - '5000:80'
       - '443:443'
     links:
       - webapp
     volumes:
       - readit_sock:/sock/
-      - readit_media:/usr/src/media/
-      - readit_static:/usr/src/static/
+      - readit_media:/usr/src/media
+      - readit_static:/usr/src/static
       - ./config/nginx.conf:/etc/nginx/nginx.conf
   webapp:
     image: foxonn/django3:readit
     env_file: .env
     volumes:
-      - readit_sock:/sock/
-      - readit_static:/webapp/static/
-      - readit_media:/webapp/media/
+      - readit_sock:/sock
+      - readit_static:/webapp/static
+      - readit_media:/webapp/media
       - ./webapp/:/webapp/
       - ./config/:/config/
     links:
       - memcached
       - postgres
     command: uwsgi --ini /config/uwsgi.ini
-    working_dir: /webapp/readit/
+    working_dir: /webapp/readit
   postgres:
     image: postgres
     env_file: .env
     volumes:
-      - readit_pg_data:/var/lib/postgresql/data/
+      - readit_postgres:/var/lib/postgresql/data
       - ./config/postgresql.conf:/etc/postgresql/postgresql.conf
     command: -c 'config_file=/etc/postgresql/postgresql.conf'
   memcached:
     image: memcached
     command: -m 512
+  rabbitmq:
+    image: rabbitmq
+    env_file: .env
+    ports:
+      - '5672:5672'
+    volumes:
+      - readit_rabbitmq:/var/lib/rabbitmq
 
 volumes:
   readit_sock:
   readit_static:
   readit_media:
-  readit_pg_data:
+  readit_postgres:
+  readit_rabbitmq:
