@@ -38,7 +38,9 @@
             <div class="row">
                 <div class="col-lg-8 ftco-animate">
                     <p class="mb-5">
-                        <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid">
+                        {% if image %}
+                            <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid">
+                        {% endif %}
                     </p>
                     <div class="ck-content">
                         {{ post.description|safe }}

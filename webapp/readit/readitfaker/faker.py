@@ -11,8 +11,6 @@ fake = Faker()
 
 
 def generate_text(paragraph=5):
-    test = []
-
     p = []
 
     for _ in range(paragraph):

@@ -7,12 +7,14 @@ def compile_breadcrumbs(obj) -> list:
     _b = [{'title': obj.title, 'url': obj.get_absolute_url()}]
 
     if obj.model_field_exists('category'):
-        obj = obj.category
-        _b.append({'title': obj.title, 'url': obj.get_absolute_url()})
+        if obj.category:
+            obj = obj.category
+            _b.append({'title': obj.title, 'url': obj.get_absolute_url()})
 
-    while obj.parent:
-        obj = obj.parent
-        _b.append({'title': obj.title, 'url': obj.get_absolute_url()})
+    if obj.model_field_exists('parent') and obj.parent:
+        while obj.parent:
+            obj = obj.parent
+            _b.append({'title': obj.title, 'url': obj.get_absolute_url()})
 
     return _b[::-1]
 
@@ -22,8 +24,11 @@ def compile_url(obj) -> list:
     _p = [obj.slug]
 
     if obj.model_field_exists('category'):
-        obj = obj.category
-        _p.append(obj.slug)
+        if obj.category:
+            obj = obj.category
+
+            if obj.slug:
+                _p.append(obj.slug)
 
     if obj.model_field_exists('parent'):
         while obj.parent:

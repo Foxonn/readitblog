@@ -10,3 +10,4 @@ plan
 *.pyc
 design/
 .idea/
+_keys.py
