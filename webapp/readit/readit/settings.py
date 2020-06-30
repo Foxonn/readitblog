@@ -13,8 +13,6 @@ INSTALLED_APPS = [
     'readitcomments',
     'readitfaker',
     'customtags',
-    'ckeditor5',
     'simple_history',
     'braces',
-    'faker',
 ]

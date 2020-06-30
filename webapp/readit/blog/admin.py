@@ -4,7 +4,6 @@ from django import forms
 from simple_history.admin import SimpleHistoryAdmin
 from django.db import models
 # from ckeditor.widgets import CKEditorWidget
-from ckeditor5.widgets import CKEditor5Widget
 from django.urls import reverse_lazy
 from django.utils.safestring import mark_safe
 
@@ -25,18 +24,8 @@ class CategoryAdmin(SimpleHistoryAdmin):
             return mark_safe(f'<a href="{url}" target="_blank">{url}</a>')
 
 
-class PostAdminForm(forms.ModelForm):
-    description = forms.CharField(widget=CKEditor5Widget())
-
-    class Meta:
-        model = Post
-        fields = '__all__'
-
-
 @admin.register(Post)
 class PostAdmin(SimpleHistoryAdmin):
-    form = PostAdminForm
-
     fields = (('title', 'slug', 'post_link',), 'description', 'short_description', 'image', 'optimized_image', 'thumbnail_image', 'category', 'tags', 'available',)
     list_display = ('title', 'short_description', 'category', 'author', 'available',)
     list_filter = ('author', 'available',)

@@ -6,12 +6,12 @@ def compile_breadcrumbs(obj) -> list:
     """Сборка хлебных крошек"""
     _b = [{'title': obj.title, 'url': obj.get_absolute_url()}]
 
-    if obj.model_field_exists('category'):
+    if hasattr(obj, 'category'):
         if obj.category:
             obj = obj.category
             _b.append({'title': obj.title, 'url': obj.get_absolute_url()})
 
-    if obj.model_field_exists('parent') and obj.parent:
+    if hasattr(obj, 'parent'):
         while obj.parent:
             obj = obj.parent
             _b.append({'title': obj.title, 'url': obj.get_absolute_url()})
@@ -23,14 +23,14 @@ def compile_url(obj) -> list:
     """Сборка урла страница, подкатегории, категория"""
     _p = [obj.slug]
 
-    if obj.model_field_exists('category'):
+    if hasattr(obj, 'category'):
         if obj.category:
             obj = obj.category
 
             if obj.slug:
                 _p.append(obj.slug)
 
-    if obj.model_field_exists('parent'):
+    if hasattr(obj, 'parent'):
         while obj.parent:
             obj = obj.parent
             _p.append(obj.slug)
