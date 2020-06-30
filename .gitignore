@@ -1,12 +1,9 @@
 .gitignore
+.idea
+design/
 webapp/*
 !webapp/readit
-!webapp/requirements.txt
+!webapp/readitblog.sqlite
 _docker-compose.yaml
-.env
-env/
-plan
 *.pyc
-design/
-.idea/
-_keys.py
+plan
