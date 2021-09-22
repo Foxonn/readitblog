@@ -6,7 +6,7 @@ billiard==3.6.3.0
 celery==4.4.2
 certifi==2020.4.5.1
 decorator==4.4.2
-Django==3.0.4
+Django==3.1.13
 django-braces==1.14.0
 django-ckeditor==5.9.0
 django-editorjs-field==0.0.3
